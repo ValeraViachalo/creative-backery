@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "./static/css/main.23ae4d75.chunk.css",
+    "main.js": "./static/js/main.d6a49f26.chunk.js",
+    "main.js.map": "./static/js/main.d6a49f26.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.355d4a7f.js",
+    "runtime-main.js.map": "./static/js/runtime-main.355d4a7f.js.map",
+    "static/js/2.c2dbbce1.chunk.js": "./static/js/2.c2dbbce1.chunk.js",
+    "static/js/2.c2dbbce1.chunk.js.map": "./static/js/2.c2dbbce1.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.23ae4d75.chunk.css.map": "./static/css/main.23ae4d75.chunk.css.map",
+    "static/js/2.c2dbbce1.chunk.js.LICENSE.txt": "./static/js/2.c2dbbce1.chunk.js.LICENSE.txt",
+    "static/media/Link.scss": "./static/media/phone.10e40458.svg",
+    "static/media/Menu.scss": "./static/media/icon-close.d2894922.svg",
+    "static/media/cakes-caramel.36eb0fc5.png": "./static/media/cakes-caramel.36eb0fc5.png",
+    "static/media/chocolate-cakes.e25f2c74.png": "./static/media/chocolate-cakes.e25f2c74.png",
+    "static/media/Cookie.scss": "./static/media/cookie.09322564.png",
+    "static/media/donuts-coconut.7d38e623.png": "./static/media/donuts-coconut.7d38e623.png",
+    "static/media/donuts-multi-layered.3d2f054d.png": "./static/media/donuts-multi-layered.3d2f054d.png",
+    "static/media/facebook.0b01769c.svg": "./static/media/facebook.0b01769c.svg",
+    "static/media/instagram.a3d88f36.svg": "./static/media/instagram.a3d88f36.svg",
+    "static/media/logo-white.c50295db.svg": "./static/media/logo-white.c50295db.svg",
+    "static/media/logo.f3cdce66.svg": "./static/media/logo.f3cdce66.svg",
+    "static/media/oats-cakes.af5a083c.png": "./static/media/oats-cakes.af5a083c.png",
+    "static/media/oats-cookies.c6ee1c39.png": "./static/media/oats-cookies.c6ee1c39.png",
+    "static/media/twitter.403f45e2.svg": "./static/media/twitter.403f45e2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.355d4a7f.js",
+    "static/js/2.c2dbbce1.chunk.js",
+    "static/css/main.23ae4d75.chunk.css",
+    "static/js/main.d6a49f26.chunk.js"
+  ]
+}
