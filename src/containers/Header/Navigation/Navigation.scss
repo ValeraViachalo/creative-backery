@@ -1,0 +1,8 @@
+@import "../../../styles/global-imports";
+
+.navigation {
+  display: flex;
+  gap: 64px;
+
+  @include hoverForLinks($c-primary);
+}

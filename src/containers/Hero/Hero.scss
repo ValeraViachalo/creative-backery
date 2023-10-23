@@ -1,0 +1,48 @@
+@import "../../styles/global-imports";
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+
+  @include onDesktop {
+    margin-top: 80px !important;
+  }
+  
+  @include onTablet {
+    gap: 24px;
+  }
+
+  &__top {
+    max-width: 280px;
+    text-align: start;
+    
+    @include onMobile {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    
+    @include onDesktop {
+      max-width: 260px;
+    }
+    
+    @include onTabletAndDesktop {
+      align-self: baseline;
+    }
+  }
+
+  &__button {
+    width: 288px;
+    height: 56px;
+    
+    @include onTablet {
+      width: 328px;
+    }
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+}

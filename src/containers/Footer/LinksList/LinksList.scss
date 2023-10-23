@@ -1,0 +1,14 @@
+@import "../../../styles/global-imports";
+
+.links-list {
+  &__title {
+    color: $c-grey;
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

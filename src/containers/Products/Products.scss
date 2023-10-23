@@ -1,0 +1,24 @@
+@import "../../styles/global-imports";
+
+.products {
+  margin-top: 104px;
+
+  width: 100%;
+
+  @include onDesktop {
+    margin-top: 454px;
+  }
+
+  &__top {
+    @include onTablet {
+      text-align: left;
+
+      margin-bottom: 64px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+  }
+}
