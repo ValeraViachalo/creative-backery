@@ -6,7 +6,6 @@ import { ScrollTrigger } from 'gsap/all';
 
 gsap.registerPlugin(ScrollTrigger);
 
-// eslint-disable-next-line arrow-body-style
 export const Cookie = () => {
   useEffect(() => {
     gsap
