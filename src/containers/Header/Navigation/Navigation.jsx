@@ -14,12 +14,11 @@ export const Navigation = () => (
         <li
           key={currentLink}
         >
-          <a
-            href={`#${getLink(currentLink)}`}
-            className="navigation__link"
-          >
-            {getTitle(currentLink)}
-          </a>
+          <Link
+            to={`#${getLink(currentLink)}`}
+            title={getTitle(currentLink)}
+            customClass="navigation__link"
+          />
         </li>
       ))}
 

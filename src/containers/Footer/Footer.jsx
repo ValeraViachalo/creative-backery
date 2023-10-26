@@ -6,7 +6,7 @@ import { Socials } from '../../components/Socials/Socials';
 
 export const Footer = () => (
   <div className="footer">
-    <div className="footer__content container">
+    <div className="footer__content container grid">
       <div className="footer__logo">
         <Logo white />
       </div>
@@ -14,9 +14,10 @@ export const Footer = () => (
       <LinksList
         title="Menu"
         links="menu"
+        customClass="footer__link-list--menu"
       />
 
-      <h2>
+      <h2 className="footer__title">
         Contact us
       </h2>
 
@@ -24,6 +25,7 @@ export const Footer = () => (
         title="Call us"
         links="contacts"
         blockLink={false}
+        customClass="footer__link-list--contacts"
       />
 
       <div className="footer__email">
@@ -36,7 +38,9 @@ export const Footer = () => (
         </a>
       </div>
 
-      <Socials />
+      <div className="footer__socials">
+        <Socials />
+      </div>
 
       <p className="footer__bottom">
         @Bakerlab 2022

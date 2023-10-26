@@ -2,7 +2,11 @@
 
 .navigation {
   display: flex;
+  align-items: center;
   gap: 64px;
 
-  @include hoverForLinks($c-primary);
+  &__link {
+    color: $c-black;
+    text-transform: capitalize;
+  }
 }

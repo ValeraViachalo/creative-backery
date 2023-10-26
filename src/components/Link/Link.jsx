@@ -9,6 +9,7 @@ export const Link = ({
   title,
   customClass = false,
   isButton = false,
+  isArrow = false,
   phone = false,
 }) => (
   <a
@@ -18,6 +19,7 @@ export const Link = ({
       {
         'link--without-border': !isButton,
         'link--without-border-phone': phone,
+        'link--without-border-arrow': isArrow,
       },
       { 'link--button': isButton },
       { [customClass]: customClass },

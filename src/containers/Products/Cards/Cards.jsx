@@ -34,7 +34,7 @@ function getImage(block) {
 }
 
 export const Cards = () => (
-  <ul className="cards">
+  <ul className="cards grid">
     {CardsContent.map(({
       id,
       photoLink,
@@ -61,6 +61,7 @@ export const Cards = () => (
             to="#/"
             title="Order"
             customClass="card__link"
+            isArrow
           />
         </div>
       </li>

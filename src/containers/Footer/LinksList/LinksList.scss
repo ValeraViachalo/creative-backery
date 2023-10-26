@@ -11,4 +11,9 @@
     flex-direction: column;
     gap: 16px;
   }
+
+  &__link {
+    color: $c-white;
+    text-transform: capitalize;
+  }
 }

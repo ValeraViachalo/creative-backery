@@ -8,18 +8,21 @@
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    min-width: max-content;  
+    max-width: min-content;
+    white-space: nowrap;
     position: relative;
     @include hoverForLinks($c-primary);
     
     transition: all 0.2s cubic-bezier(0.38, 1.12, 0.81, 0.6);
 
-    &::after {
-      content: "";
-      display: block;
-      width: 24px;
-      height: 24px;
-      background: url("../../images/icons/arrow.svg") no-repeat center;
+    &-arrow {
+      &::after {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url("../../images/icons/arrow.svg") no-repeat center;
+      }
     }
 
     &-phone {

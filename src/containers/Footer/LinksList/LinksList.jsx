@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import classNames from 'classnames';
 import { getLink } from '../../../components/MenuContent/getLink';
 import { getTitle } from '../../../components/MenuContent/getTitle';
 
@@ -7,11 +8,13 @@ import Menu from '../../../components/MenuContent/MenuContent.json';
 import Contacts from '../ContactsContent/ContactsContent.json';
 
 import './LinksList.scss';
+import { Link } from '../../../components/Link';
 
 export const LinksList = ({
   title,
   links,
   blockLink = true,
+  customClass = false,
 }) => {
   let array = [];
 
@@ -22,7 +25,11 @@ export const LinksList = ({
   }
 
   return (
-    <div className="links-list">
+    <div className={classNames(
+      'links-list',
+      { [customClass]: customClass },
+    )}
+    >
       <h3 className="links-list__title">
         {title}
       </h3>
@@ -30,15 +37,15 @@ export const LinksList = ({
       <ul className="links-list__list">
         {array.map(currentLink => (
           <li key={currentLink}>
-            <a
-              href={`
+            <Link
+              to={`
                 ${blockLink
             ? `#${getLink(currentLink)}`
             : `tel:${currentLink}`}`
               }
-            >
-              {blockLink ? getTitle(currentLink) : currentLink}
-            </a>
+              title={blockLink ? getTitle(currentLink) : currentLink}
+              customClass="links-list__link"
+            />
           </li>
         ))}
       </ul>

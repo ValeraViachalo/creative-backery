@@ -4,21 +4,21 @@ import './Cookie.scss';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 
-gsap.registerPlugin(ScrollTrigger);
-
 export const Cookie = () => {
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     gsap
       .timeline({
         scrollTrigger: {
-          trigger: '#wrapper',
+          trigger: document.documentElement,
           scrub: 0.2,
-          start: '0',
-          end: '160px',
+          start: '100px',
+          end: '1000vh',
         },
       })
       .to('.cookie', {
-        rotation: 30,
+        rotation: 50,
+        top: '-130px',
         duration: 2,
       });
   }, []);
