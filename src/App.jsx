@@ -2,19 +2,34 @@ import React from 'react';
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Lenis from '@studio-freight/lenis';
 
 import './App.scss';
 import { Header } from './containers/Header';
 import { Footer } from './containers/Footer/Footer';
 
 import { Hero } from './containers/Hero';
-import { Products } from './containers/Products';
+import Products from './containers/Products/Products';
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const App = () => (
-  <div className="app" id="scroll__wrapper">
-    <div id="scroll__content">
+export default function App() {
+  const lenis = new Lenis();
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  function easing(x) {
+    // eslint-disable-next-line no-restricted-properties
+    return x === 0 ? 0 : Math.pow(2, 10 * x - 10);
+  }
+
+  requestAnimationFrame(raf, easing);
+
+  return (
+    <div className="app">
       <div className="container">
         <header className="app__header">
           <Header />
@@ -35,5 +50,5 @@ export const App = () => (
         <Footer />
       </footer>
     </div>
-  </div>
-);
+  );
+}

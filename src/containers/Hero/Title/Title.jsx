@@ -5,6 +5,9 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Splitting from 'splitting';
+import 'splitting/dist/splitting.css';
+import 'splitting/dist/splitting-cells.css';
 
 import './Title.scss';
 
@@ -32,6 +35,30 @@ export const Title = () => {
     requestAnimationFrame(animate);
   }, []);
 
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    Splitting();
+
+    const letters = document.querySelectorAll('.title--for-desktop .char');
+
+    letters.forEach((letter, index) => {
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: document.documentElement,
+            scrub: 0.2,
+            start: '40px',
+            end: '1000vh',
+          },
+        })
+        .to(letter, {
+          y: -330 + 40 * index,
+          duration: 2,
+        });
+    });
+  }, []);
+
   const animate = () => {
     if (xPercent < -100) {
       xPercent = 0;
@@ -50,7 +77,10 @@ export const Title = () => {
   return (
     <div className="title">
       <h1 className="title--for-desktop">
-        Creative backery
+        <span data-splitting="words">
+          <span className="scroll-char" data-splitting="chars">Creative</span>
+          Bakery
+        </span>
       </h1>
 
       <div ref={slider} className="title__slider">

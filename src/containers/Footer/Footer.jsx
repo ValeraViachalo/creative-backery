@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.scss';
 import { Logo } from '../../components/Logo';
 import { LinksList } from './LinksList';
-import { Socials } from '../../components/Socials/Socials';
+import { SocialsList } from '../../components/Socials/SocialsList';
 
 export const Footer = () => (
   <div className="footer">
@@ -39,7 +39,7 @@ export const Footer = () => (
       </div>
 
       <div className="footer__socials">
-        <Socials />
+        <SocialsList />
       </div>
 
       <p className="footer__bottom">

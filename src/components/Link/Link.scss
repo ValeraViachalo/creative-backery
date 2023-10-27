@@ -27,6 +27,10 @@
 
     &-phone {
       &::after {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
         background: url("../../images/icons/phone.svg") no-repeat center;
       }
     }

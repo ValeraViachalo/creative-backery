@@ -17,8 +17,21 @@ export const Cookie = () => {
         },
       })
       .to('.cookie', {
-        rotation: 50,
         top: '-130px',
+        duration: 2,
+      });
+
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: document.documentElement,
+          scrub: 0.2,
+          start: '100px',
+          end: '500px',
+        },
+      })
+      .to('.cookie', {
+        rotation: 30,
         duration: 2,
       });
   }, []);

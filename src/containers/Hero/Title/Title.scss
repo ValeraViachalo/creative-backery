@@ -22,6 +22,8 @@
     @include onDesktop {
       top: 200%;
     }
+
+    
   }
   
   &__slider {
@@ -37,4 +39,8 @@
       font-size: 100px;
     }
   }
+}
+
+.scroll-char {
+  margin-right: 40px;
 }
