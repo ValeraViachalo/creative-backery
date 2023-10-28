@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "./static/css/main.3f8af07c.chunk.css",
-    "main.js": "./static/js/main.e68e9233.chunk.js",
-    "main.js.map": "./static/js/main.e68e9233.chunk.js.map",
+    "main.css": "./static/css/main.6ec397b9.chunk.css",
+    "main.js": "./static/js/main.76b7f383.chunk.js",
+    "main.js.map": "./static/js/main.76b7f383.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.355d4a7f.js",
     "runtime-main.js.map": "./static/js/runtime-main.355d4a7f.js.map",
     "static/css/2.ffef2bbd.chunk.css": "./static/css/2.ffef2bbd.chunk.css",
-    "static/js/2.ff475b42.chunk.js": "./static/js/2.ff475b42.chunk.js",
-    "static/js/2.ff475b42.chunk.js.map": "./static/js/2.ff475b42.chunk.js.map",
+    "static/js/2.ccbc8e7e.chunk.js": "./static/js/2.ccbc8e7e.chunk.js",
+    "static/js/2.ccbc8e7e.chunk.js.map": "./static/js/2.ccbc8e7e.chunk.js.map",
     "index.html": "./index.html",
     "static/css/2.ffef2bbd.chunk.css.map": "./static/css/2.ffef2bbd.chunk.css.map",
-    "static/css/main.3f8af07c.chunk.css.map": "./static/css/main.3f8af07c.chunk.css.map",
-    "static/js/2.ff475b42.chunk.js.LICENSE.txt": "./static/js/2.ff475b42.chunk.js.LICENSE.txt",
+    "static/css/main.6ec397b9.chunk.css.map": "./static/css/main.6ec397b9.chunk.css.map",
+    "static/js/2.ccbc8e7e.chunk.js.LICENSE.txt": "./static/js/2.ccbc8e7e.chunk.js.LICENSE.txt",
+    "static/media/AboutUs.scss": "./static/media/about-us-bg.638beb69.png",
     "static/media/Link.scss": "./static/media/phone.10e40458.svg",
     "static/media/Menu.scss": "./static/media/icon-close.d2894922.svg",
     "static/media/cakes-caramel.36eb0fc5.png": "./static/media/cakes-caramel.36eb0fc5.png",
     "static/media/chocolate-cakes.e25f2c74.png": "./static/media/chocolate-cakes.e25f2c74.png",
+    "static/media/Button.scss": "./static/media/cookie.948f0756.svg",
     "static/media/Cookie.scss": "./static/media/cookie.09322564.png",
     "static/media/donuts-coconut.7d38e623.png": "./static/media/donuts-coconut.7d38e623.png",
     "static/media/donuts-multi-layered.3d2f054d.png": "./static/media/donuts-multi-layered.3d2f054d.png",
@@ -30,8 +32,8 @@
   "entrypoints": [
     "static/js/runtime-main.355d4a7f.js",
     "static/css/2.ffef2bbd.chunk.css",
-    "static/js/2.ff475b42.chunk.js",
-    "static/css/main.3f8af07c.chunk.css",
-    "static/js/main.e68e9233.chunk.js"
+    "static/js/2.ccbc8e7e.chunk.js",
+    "static/css/main.6ec397b9.chunk.css",
+    "static/js/main.76b7f383.chunk.js"
   ]
 }
