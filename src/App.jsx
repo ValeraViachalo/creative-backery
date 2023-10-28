@@ -39,10 +39,6 @@ export default function App() {
           <Hero />
 
           <Products />
-          <div style={{
-            marginBottom: '1050px',
-          }}
-          />
         </main>
       </div>
 

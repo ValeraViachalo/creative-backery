@@ -3,36 +3,17 @@
 /* eslint-disable object-shorthand */
 /* eslint-disable no-return-assign */
 import React, { useEffect, useRef } from 'react';
-import { motion, useInView } from 'framer-motion/dist/framer-motion';
 import './Hero.scss';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 
-import { Link } from '../../components/Link';
 import { Title } from './Title/Title';
 import { Cookie } from './Cookie';
-
-const slideUp = {
-  initial: {
-    y: '100%',
-  },
-  open: i => ({
-    y: '0%',
-    transition: {
-      duration: 0.5,
-      delay: 0.01 * i,
-    },
-  }),
-  closed: {
-    y: '100%',
-    transition: { duration: 0.5 },
-  },
-};
+import { Button } from '../../components/Button/Button';
+import { TextSplit } from '../../components/TextSplit/TextSplit';
 
 export const Hero = () => {
-  const phrase = 'We bake your fantasies — croissants, cakes, cookies, and cupcakes.';
-  const description = useRef(null);
-  const isInView = useInView(description);
+  const descriptionRef = useRef(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -70,24 +51,10 @@ export const Hero = () => {
       className="hero container"
       id="hero"
     >
-      <div className="hero__top" ref={description}>
-        <p>
-          {phrase.split(' ').map((word, index) => (
-            <span
-              key={word}
-              className="hero__text-mask"
-            >
-              <motion.span
-                variants={slideUp}
-                custom={index}
-                animate={isInView ? 'open' : 'closed'}
-                key={word}
-              >
-                {word}
-              </motion.span>
-            </span>
-          ))}
-        </p>
+      <div className="hero__top" ref={descriptionRef}>
+        <TextSplit
+          phrase="We bake your fantasies — croissants, cakes, cookies, and cupcakes."
+        />
       </div>
 
       <Title />
@@ -95,7 +62,7 @@ export const Hero = () => {
       <Cookie />
 
       <div className="hero__button">
-        <Link
+        <Button
           to="#/"
           title="Learn More"
           isButton

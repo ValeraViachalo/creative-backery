@@ -26,7 +26,7 @@ export const Cookie = () => {
         scrollTrigger: {
           trigger: document.documentElement,
           scrub: 0.2,
-          start: '100px',
+          start: '10px',
           end: '500px',
         },
       })

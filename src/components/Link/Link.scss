@@ -52,7 +52,7 @@
     border: 2px solid $c-primary;
     border-radius: 32px;
 
-    @include hover(background-color, $c-primary);
+    // @include hover(background-color, $c-primary);
     @include hover(color, $c-white);
 
     
@@ -67,6 +67,16 @@
 
     &:hover::after {
       background-image: url("../../images/icons/cookie-white.svg");
+    }
+
+    &__circle {
+      width: 100%;
+      height: 150%;
+      position: absolute;
+      border-radius: 50%;
+      top: 100%;
+      z-index: -1;
+      background-color: $c-primary;
     }
   }
 }

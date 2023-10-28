@@ -1,4 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
 import { motion, useInView } from 'framer-motion/dist/framer-motion';
 import { Cards } from './Cards';
 
@@ -22,10 +24,27 @@ const slideUp = {
 };
 
 const Products = () => {
-  // eslint-disable-next-line max-len
-  const phrase = 'We can customize our cookies right for your needs. Just imagine it.';
+  const phrase
+    = 'We can customize our cookies right for your needs. Just imagine it.';
   const description = useRef(null);
   const isInView = useInView(description);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: document.documentElement,
+          scrub: 0.2,
+          start: '200vh',
+          end: '1000vh',
+        },
+      })
+      .to('#products', {
+        top: '-230px',
+        duration: 2,
+      });
+  }, []);
 
   return (
     <section
@@ -48,6 +67,7 @@ const Products = () => {
                 custom={index}
                 animate={isInView ? 'open' : 'closed'}
                 key={word}
+                className="products__text-word"
               >
                 {word}
               </motion.span>
