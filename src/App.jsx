@@ -10,6 +10,7 @@ import { Footer } from './containers/Footer/Footer';
 
 import { Hero } from './containers/Hero';
 import Products from './containers/Products/Products';
+import { AboutUs } from './containers/AboutUs/AboutUs';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -39,6 +40,8 @@ export default function App() {
           <Hero />
 
           <Products />
+
+          <AboutUs />
         </main>
       </div>
 

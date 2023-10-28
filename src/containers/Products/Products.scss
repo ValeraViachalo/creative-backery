@@ -1,15 +1,18 @@
 @import "../../styles/global-imports";
 
 .products {
-
-  margin-top: 104px;
+  margin-top: 304px;
   
   width: 100%;
   
   position: relative;
   
   @include onDesktop {
-    margin-top: 454px;
+    margin-top: 554px;
+  }
+
+  @include onTablet {
+    margin-top: 80px;
   }
   
   &__top {

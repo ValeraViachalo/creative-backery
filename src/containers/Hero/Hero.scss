@@ -4,15 +4,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  
   position: relative;
-
+  transform: translateY(10%);
+  
   @include onDesktop {
+    transform: translateY(70%);
     margin-top: 80px !important;
   }
   
   @include onTablet {
     gap: 24px;
+    transform: translateY(-16%);
   }
 
   &__top {
@@ -31,6 +34,10 @@
     
     @include onTabletAndDesktop {
       align-self: baseline;
+    }
+
+    @include onTablet {
+      transform: translateY(100px);
     }
   }
 

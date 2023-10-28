@@ -51,7 +51,7 @@ export const Button = ({
     <a
       href={to}
       className={classNames(
-        'link', 'link--button',
+        'button',
         { [customClass]: customClass },
       )}
       style={{ overflow: 'hidden' }}
@@ -61,7 +61,7 @@ export const Button = ({
       {title}
       <div
         ref={circle}
-        className="link--button__circle"
+        className="button__circle"
       />
     </a>
   );

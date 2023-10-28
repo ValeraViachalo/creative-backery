@@ -84,6 +84,11 @@
     &-title {
       color: $c-grey;
     }
+
+    &-link {
+      color: $c-white;
+      text-transform: lowercase;
+    }
   }
 
   &__socials {

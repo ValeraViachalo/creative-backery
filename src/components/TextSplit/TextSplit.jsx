@@ -12,7 +12,7 @@ const slideUp = {
     y: '0%',
     transition: {
       duration: 0.5,
-      delay: 0.01 * i,
+      delay: (0.01 * i) + 0.2,
     },
   }),
   closed: {
@@ -21,9 +21,12 @@ const slideUp = {
   },
 };
 
-export const TextSplit = ({ phrase, onInView }) => {
+export const TextSplit = ({
+  phrase,
+  onInView,
+}) => {
   const description = useRef(null);
-  const isInView = useInView(description, { triggerOnce: true });
+  const isInView = useInView(description);
 
   useEffect(() => {
     if (isInView && onInView) {
@@ -40,6 +43,7 @@ export const TextSplit = ({ phrase, onInView }) => {
         <span
           key={word}
           className="text-split__mask"
+          // style={{ marginRight: space }}
         >
           <motion.span
             variants={slideUp}
@@ -48,6 +52,7 @@ export const TextSplit = ({ phrase, onInView }) => {
             key={word}
           >
             {word}
+            &nbsp;
           </motion.span>
         </span>
       ))}

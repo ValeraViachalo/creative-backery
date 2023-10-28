@@ -3,7 +3,9 @@
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 56px;
+  row-gap: 80px !important;
+
+  margin-top: 40px;
 
   .card {
     display: flex;

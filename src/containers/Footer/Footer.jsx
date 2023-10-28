@@ -3,6 +3,7 @@ import './Footer.scss';
 import { Logo } from '../../components/Logo';
 import { LinksList } from './LinksList';
 import { SocialsList } from '../../components/Socials/SocialsList';
+import { Link } from '../../components/Link';
 
 export const Footer = () => (
   <div className="footer">
@@ -33,9 +34,11 @@ export const Footer = () => (
           Email us
         </h3>
 
-        <a href="mailto:bakerlab@example.com">
-          bakerlab@example.com
-        </a>
+        <Link
+          to="mailto:bakerlab@example.com"
+          title="bakerlab@example.com"
+          customClass="footer__email-link"
+        />
       </div>
 
       <div className="footer__socials">

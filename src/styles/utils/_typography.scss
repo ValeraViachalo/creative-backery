@@ -74,7 +74,16 @@ a {
   font-family: Inter, sans-serif;
   color: $c-primary;
   font-size: inherit;
-  margin-right: 10px;
+}
+
+.big-text {
+  font-family: Inter;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 85%;
+  letter-spacing: -4.8px;
+  text-transform: uppercase;
 }
 
 h1 {
