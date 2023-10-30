@@ -48,7 +48,7 @@ export const Hero = () => {
 
   return (
     <section
-      className="hero container"
+      className="hero"
       id="hero"
     >
       <div className="hero__top" ref={descriptionRef}>

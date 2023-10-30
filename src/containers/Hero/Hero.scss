@@ -29,14 +29,13 @@
     }
     
     @include onDesktop {
-      max-width: 260px;
+      max-width: 290px;
+      left: -148%;
+      top: -50px;
     }
     
-    @include onTabletAndDesktop {
-      align-self: baseline;
-    }
-
     @include onTablet {
+      left: -50%;
       transform: translateY(100px);
     }
   }
@@ -52,8 +51,8 @@
 
     @include onDesktop {
       position: absolute;
-      left: 0;
-      top: 260px;
+      left: -156%;
+      top: 200px;
     }
   }
 }
